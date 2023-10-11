@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+@layer utilities {
+  
+  .clip-path {
+    clip-path: polygon(0 100%, 100% 100%, 0 0);
+  }
+}
