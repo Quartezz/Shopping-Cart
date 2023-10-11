@@ -1,12 +1,14 @@
-import Header from "./components/Header";
-import Home from "./components/Home";
-import Trending from "./components/Trending";
+import GenreList from "./components/GenreList";
+import Header from "./sections/Header";
+import Home from "./sections/Home";
+import Trending from "./sections/Trending";
 
 const App = () => {
   return (
     <>
       <Header />
       <Home />
+      <GenreList />
       <Trending />
     </>
   );
