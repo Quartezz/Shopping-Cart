@@ -1,4 +1,17 @@
+import { useEffect, useState } from "react";
+import Api from "../api/Api";
+
 const Trending = () => {
+  const [allGameList, setAllGameList] = useState();
+  useEffect(() => {
+    getAllGamesList();
+  }, []);
+
+  const getAllGamesList = () =>
+    Api.getGamesList.then((resp) => {
+      setAllGameList(resp.data.results);
+    });
+
   return (
     <div className="flex flex-col px-40 text-slate-100 bg-color w-full h-full">
       <a href="/" className="flex items-end justify-start gap-2">
