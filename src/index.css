@@ -28,10 +28,6 @@ body {
     background-color: #101010;
   }
 
-  .width-card {
-    width: calc(33.33333% - 32px);
-  }
-
   .hover-transition {
     transition: transform 0.3s;
   }
@@ -46,6 +42,11 @@ body {
 
   .spacer-color {
     background-color: #323232;
+  }
+
+  .center-last {
+    grid-column: 2;
+
   }
 
 }
