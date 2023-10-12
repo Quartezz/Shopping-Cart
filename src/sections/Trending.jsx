@@ -21,11 +21,11 @@ const Trending = ({ gameList }) => {
                 <div className="w-full flex justify-between">
                   <span>{item.name}</span>
                   <span className="flex gap-1 items-center">
-                    <i class="fa-regular fa-calendar"></i>
+                    <i className="fa-regular fa-calendar"></i>
                     {item.released}
                   </span>
                   <span className="flex gap-1 items-center">
-                    <i class="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
                     {item.rating}
                   </span>
                 </div>

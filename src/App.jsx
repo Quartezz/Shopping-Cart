@@ -16,7 +16,7 @@ const App = () => {
 
   useEffect(() => {
     getAllGamesList();
-    getGameListByGenreId(4);
+    getGameListByGenresId(4);
   }, []);
 
   const getAllGamesList = () => {
@@ -25,8 +25,9 @@ const App = () => {
     });
   };
 
-  const getGameListByGenreId = (id) => {
+  const getGameListByGenresId = (id) => {
     Api.getGameListByGenreId(id).then((resp) => {
+      console.log(resp.data.results);
       setGameListByGenres(resp.data.results);
     });
   };
@@ -36,7 +37,7 @@ const App = () => {
       <Home />
       <Trending gameList={allGameList} />
       <GenreList
-        genreId={(genereId) => getGameListByGenreId(genereId)}
+        genereId={(genereId) => getGameListByGenresId(genereId)}
         selectedGenresName={(name) => setSelectedGenresName(name)}
       />
       <Trust />
