@@ -24,6 +24,10 @@ body {
     background-color: rgb(39,39,39);
   }
 
+  .bg-color-trust {
+    background-color: #101010;
+  }
+
   .width-card {
     width: calc(33.33333% - 32px);
   }
@@ -34,6 +38,14 @@ body {
 
   .hover-transform {
     transform: scale(1.1)
+  }
+
+  .desc-color {
+    color: #999;
+  }
+
+  .spacer-color {
+    background-color: #323232;
   }
 
 }
