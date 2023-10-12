@@ -3,6 +3,8 @@ import Header from "./sections/Header";
 import Home from "./sections/Home";
 import Trending from "./sections/Trending";
 import Trust from "./sections/Trust";
+import Reviews from "./sections/Reviews";
+import Footer from "./sections/Footer";
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
       <GenreList />
       <Trust />
       <Trending />
+      <Reviews />
+      <Footer />
     </>
   );
 };
