@@ -19,11 +19,11 @@ const GenreList = () => {
       </a>
       <div className="flex relative justify-center flex-wrap m-4">
         {genreList.map((item) => (
-          <div className="m-4 width-card z-1 min-w-0 relative flex flex-col card-hover hover:card-hover-transform cursor-pointer">
+          <div className="m-4 width-card z-1 min-w-0 relative flex flex-col hover-transition hover:hover-transform cursor-pointer">
             <img
               src={item.image_background}
-              alt="image"
-              className="w-full h-full object-cover rounded-lg max-h-[150px]"
+              alt={item.name}
+              className="w-full h-full object-fill rounded-lg max-h-[200px]"
             />
             <div className="text-center mt-2">
               <div className="z-1 text-2xl font-bold">{item.name}</div>

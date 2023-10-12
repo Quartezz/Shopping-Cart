@@ -28,12 +28,12 @@ body {
     width: calc(33.33333% - 32px);
   }
 
-  .card-hover {
+  .hover-transition {
     transition: transform 0.3s;
   }
 
-  .card-hover-transform {
-    transform: scale(1.2)
+  .hover-transform {
+    transform: scale(1.1)
   }
 
 }

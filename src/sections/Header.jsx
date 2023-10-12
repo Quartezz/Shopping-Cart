@@ -13,31 +13,49 @@ const Header = () => {
       </a>
       <div className="flex flex-col items-center justify-center gap-2">
         <div className="flex gap-4">
-          <a href="/">Trending</a>
-          <a href="/">Games of the year</a>
-          <a href="/">Support</a>
+          <a href="/" className="hover-transition hover:hover-transform">
+            Trending
+          </a>
+          <a href="/" className="hover-transition hover:hover-transform">
+            Games of the year
+          </a>
+          <a href="/" className="hover-transition hover:hover-transform">
+            Support
+          </a>
         </div>
         <div className="flex gap-4 items-center justify-center relative w-full">
           <div>
-            <a href="/" className="flex items-center gap-1">
+            <a
+              href="/"
+              className="flex items-center gap-1 hover-transition hover:hover-transform"
+            >
               <i className="fa-solid fa-desktop text-xl"></i>
               <span>PC</span>
             </a>
           </div>
           <div>
-            <a href="" className="flex items-center gap-1">
+            <a
+              href=""
+              className="flex items-center gap-1 hover-transition hover:hover-transform"
+            >
               <i className="fa-brands fa-playstation text-xl"></i>
               <span>Playstation</span>
             </a>
           </div>
           <div>
-            <a href="" className="flex items-center gap-1">
+            <a
+              href=""
+              className="flex items-center gap-1 hover-transition hover:hover-transform"
+            >
               <i className="fa-brands fa-xbox text-xl"></i>
               <span>Xbox</span>
             </a>
           </div>
           <div>
-            <a href="" className="flex items-center gap-1">
+            <a
+              href=""
+              className="flex items-center gap-1 hover-transition hover:hover-transform"
+            >
               <i className="fa-solid fa-gamepad text-xl"></i>
               <span>Nintendo</span>
             </a>
@@ -45,10 +63,10 @@ const Header = () => {
         </div>
       </div>
       <div className="flex gap-4">
-        <a href="">
+        <a href="" className="hover-transition hover:hover-transform">
           <i className="fa-solid fa-cart-shopping text-2xl"></i>
         </a>
-        <a href="">
+        <a href="" className="hover-transition hover:hover-transform">
           <i className="fa-solid fa-user text-2xl"></i>
         </a>
       </div>
