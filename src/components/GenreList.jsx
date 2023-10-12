@@ -3,6 +3,7 @@ import Api from "../api/Api";
 
 const GenreList = () => {
   const [genreList, setGenreList] = useState([]);
+  const [activeIndex, setActiveIndex] = useState(0);
   useEffect(() => {
     getGenreList();
   }, []);
@@ -20,9 +21,8 @@ const GenreList = () => {
       <div className="flex flex-wrap w-full relative m-4 justify-center items-center flex-1">
         {genreList.map((item, index) => (
           <div
-            className={`m-4 z-1 min-w-0 relative sm:flex sm:flex-col hover-transition hover:hover-transform cursor-pointer flex items-center gap-2${
-              index === genreList.length - 1 ? "center-last" : ""
-            }`}
+            onClick={() => setActiveIndex(index)}
+            className="m-4 z-1 min-w-0 relative sm:flex sm:flex-col hover-transition hover:hover-transform cursor-pointer flex items-center gap-2"
           >
             <img
               src={item.image_background}
@@ -30,7 +30,11 @@ const GenreList = () => {
               className="w-full h-full object-fill rounded-lg sm:h-[150px] sm:w-[250px] h-[75px] w-[100px]"
             />
             <div className="sm:text-center mt-2 w-[100px] text-start">
-              <div className="z-1 sm:text-2xl font-bold text-xl">
+              <div
+                className={`z-1 sm:text-2xl font-bold text-xl ${
+                  activeIndex == index ? "text-amber-700" : null
+                }`}
+              >
                 {item.name}
               </div>
             </div>
