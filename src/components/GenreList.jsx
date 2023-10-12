@@ -29,7 +29,7 @@ const GenreList = () => {
               alt={item.name}
               className="w-full h-full object-fill rounded-lg sm:h-[150px] sm:w-[250px] h-[75px] w-[100px]"
             />
-            <div className="sm:text-center mt-2 w-[90px] text-start">
+            <div className="sm:text-center mt-2 w-[100px] text-start">
               <div className="z-1 sm:text-2xl font-bold text-xl">
                 {item.name}
               </div>
