@@ -5,11 +5,6 @@ const Header = () => {
     <header className="flex items-center justify-between w-full py-0 px-[30px] h-20 fixed top-[0] z-10 mb-[-73px] text-slate-100 opacity-85 bg-color">
       <a href="/" alt="logo" className="flex gap-2">
         <img src={logo} alt="logo" width={120} height={40} />
-        <h1 className="text-2xl font-bold">
-          Game
-          <br />
-          Harbor
-        </h1>
       </a>
       <div className="flex flex-col items-center justify-center gap-2">
         <div className="flex gap-4">
