@@ -1,17 +1,7 @@
-import { useEffect, useState } from "react";
-import Api from "../api/Api";
+import { useEffect } from "react";
 
-const Trending = () => {
-  const [allGameList, setAllGameList] = useState([]);
-  useEffect(() => {
-    getAllGamesList();
-  }, []);
-
-  const getAllGamesList = () =>
-    Api.getGamesList.then((resp) => {
-      setAllGameList(resp.data.results);
-      console.log(resp.data.results);
-    });
+const Trending = ({ gameList }) => {
+  useEffect(() => {}, []);
 
   return (
     <div className="flex flex-col px-40 text-slate-100 bg-color w-full h-full">
@@ -20,7 +10,7 @@ const Trending = () => {
         <i className="fa-solid fa-chevron-right text-2xl"></i>
       </a>
       <div className="flex flex-wrap w-full relative m-4 justify-center items-center flex-1">
-        {allGameList.map(
+        {gameList.map(
           (item, index) =>
             index < 6 && (
               <div className="m-4 z-1 min-w-0 relative sm:flex sm:flex-col hover-transition hover:hover-transform cursor-pointer flex items-center gap-2">

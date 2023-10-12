@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Api from "../api/Api";
 
-const GenreList = () => {
+const GenreList = ({ genereId, selectedGenresName }) => {
   const [genreList, setGenreList] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
   useEffect(() => {
@@ -21,7 +21,11 @@ const GenreList = () => {
       <div className="flex flex-wrap w-full relative m-4 justify-center items-center flex-1">
         {genreList.map((item, index) => (
           <div
-            onClick={() => setActiveIndex(index)}
+            onClick={() => {
+              setActiveIndex(index);
+              genereId(item.id);
+              selectedGenresName(item.name);
+            }}
             className="m-4 z-1 min-w-0 relative sm:flex sm:flex-col hover-transition hover:hover-transform cursor-pointer flex items-center gap-2"
           >
             <img
