@@ -49,4 +49,17 @@ body {
 
   }
 
+  .circle {
+    border-radius: 50%;
+  }
+
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .barlow {
+    font-family: "Barlow", sans-serif;
+  }
+
 }
