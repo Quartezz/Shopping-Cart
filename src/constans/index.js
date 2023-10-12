@@ -1,5 +1,5 @@
 import facebook from "../assets/icons/facebook.svg";
-import twitter from "../assets/icons/instagram.svg";
+import twitter from "../assets/icons/twitter.svg";
 import instagram from "../assets/icons/instagram.svg";
 
 export const footerLinks = [
