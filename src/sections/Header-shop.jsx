@@ -5,7 +5,7 @@ const Headershop = () => {
   return (
     <header className="flex items-center justify-between w-full py-0 px-[30px] h-20 fixed top-[0] z-10 mb-[-73px] text-slate-100 opacity-85 bg-color">
       <div className="flex gap-2">
-        <a href="#home" alt="logo" className="">
+        <a href="#home" alt="logo" className="hidden sm:block">
           <img src={logo} alt="logo" width={120} height={40} />
         </a>
       </div>
@@ -27,7 +27,7 @@ const Headershop = () => {
             Support
           </a>
         </div>
-        <div className="flex gap-4 items-center justify-center relative w-full">
+        <div className="flex sm:gap-4 items-center justify-center relative w-full gap-1">
           <div>
             <a
               href="/"
@@ -66,11 +66,19 @@ const Headershop = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-4">
-        <a href="#home" className="hover-transition hover:hover-transform">
+      <div className="flex sm:flex-row sm:gap-4 flex-col justify-center items-center">
+        <a
+          href="#home"
+          className="hover-transition hover:hover-transform"
+          alt="To the top!"
+        >
           <i className="fa-solid fa-circle-arrow-up text-2xl"></i>
         </a>
-        <Link to="/cart" className="hover-transition hover:hover-transform">
+        <Link
+          to="/cart"
+          className="hover-transition hover:hover-transform"
+          alt="Cart"
+        >
           <i className="fa-solid fa-cart-shopping text-2xl"></i>
         </Link>
       </div>
