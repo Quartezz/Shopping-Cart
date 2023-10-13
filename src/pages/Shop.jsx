@@ -15,6 +15,7 @@ const Shop = () => {
   const [gameListByGenres, setGameListByGenres] = useState([]);
   const [selectedGenresName, setSelectedGenresName] = useState("Action");
   const { addToCart } = useCart();
+
   useEffect(() => {
     getAllGamesList();
     getGameListByGenresId(4);

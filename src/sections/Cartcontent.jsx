@@ -1,7 +1,7 @@
 import { useCart } from "../components/CartContext";
 
 const Cartcontent = () => {
-  const { cart } = useCart();
+  const { cart, removeFromCart } = useCart();
 
   const calculateTotalCost = () => {
     let total = 0;
@@ -9,6 +9,10 @@ const Cartcontent = () => {
       total += game.cost;
     });
     return total;
+  };
+
+  const handleRemoveFromCart = (game) => {
+    removeFromCart(game);
   };
   return (
     <div className="sm:px-40 text-slate-100 bg-color w-full h-full px-10">
@@ -24,6 +28,12 @@ const Cartcontent = () => {
               className="w-full h-full object-fill rounded-lg sm:h-[200px] sm:w-[400px] "
               alt={`${game.name} game card`}
             />
+            <a
+              onClick={() => handleRemoveFromCart(game)}
+              className="absolute bottom-8 right-0 p-2 hover-transition hover:hover-transform cursor-pointer"
+            >
+              <i className="fa-solid fa-minus-circle text-slate-100 text-2xl"></i>
+            </a>
             <div className="w-full flex justify-between">
               <span>{game.name}</span>
               <span className="flex items-center">{game.cost} $</span>
