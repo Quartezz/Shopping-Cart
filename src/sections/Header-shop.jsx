@@ -73,9 +73,6 @@ const Headershop = () => {
         <Link to="/cart" className="hover-transition hover:hover-transform">
           <i className="fa-solid fa-cart-shopping text-2xl"></i>
         </Link>
-        <a href="" className="hover-transition hover:hover-transform">
-          <i className="fa-solid fa-user text-2xl"></i>
-        </a>
       </div>
     </header>
   );
