@@ -20,10 +20,7 @@ const Trending = ({ gameList }) => {
                 />
                 <div className="w-full flex justify-between">
                   <span>{item.name}</span>
-                  <span className="flex gap-1 items-center">
-                    <i className="fa-regular fa-calendar"></i>
-                    {item.released}
-                  </span>
+                  <span className="flex gap-1 items-center">{item.cost} $</span>
                   <span className="flex gap-1 items-center">
                     <i className="fa-solid fa-star"></i>
                     {item.rating}

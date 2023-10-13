@@ -19,16 +19,26 @@ const App = () => {
     getGameListByGenresId(4);
   }, []);
 
+  const generateRandomCost = (response) => {
+    const minCost = 10;
+    const maxCost = 50;
+    const gameData = response.data.results;
+    const gameDataWithCost = gameData.map((game) => ({
+      ...game,
+      cost: Math.floor(Math.random() * (maxCost - minCost + 1)) + minCost,
+    }));
+    return gameDataWithCost;
+  };
+
   const getAllGamesList = () => {
     Api.getAllGames.then((resp) => {
-      setAllGameList(resp.data.results);
+      setAllGameList(generateRandomCost(resp));
     });
   };
 
   const getGameListByGenresId = (id) => {
     Api.getGameListByGenreId(id).then((resp) => {
-      console.log(resp.data.results);
-      setGameListByGenres(resp.data.results);
+      setGameListByGenres(generateRandomCost(resp));
     });
   };
   return (
