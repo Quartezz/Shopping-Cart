@@ -13,7 +13,10 @@ const GenreList = ({ genereId, selectedGenresName }) => {
     });
   };
   return (
-    <div className="sm:px-40 text-slate-100 bg-color w-full h-full px-10">
+    <div
+      id="categories"
+      className="sm:px-40 text-slate-100 bg-color w-full h-full px-10"
+    >
       <a href="/" className="flex items-end justify-start gap-2">
         <h2 className="text-3xl">Categories</h2>
         <i className="fa-solid fa-chevron-right text-2xl"></i>

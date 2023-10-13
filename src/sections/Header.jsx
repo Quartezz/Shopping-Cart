@@ -3,18 +3,24 @@ import { logo } from "../assets/icons";
 const Header = () => {
   return (
     <header className="flex items-center justify-between w-full py-0 px-[30px] h-20 fixed top-[0] z-10 mb-[-73px] text-slate-100 opacity-85 bg-color">
-      <a href="/" alt="logo" className="flex gap-2">
+      <a href="#home" alt="logo" className="flex gap-2">
         <img src={logo} alt="logo" width={120} height={40} />
       </a>
       <div className="flex flex-col items-center justify-center gap-2">
         <div className="flex gap-4">
-          <a href="/" className="hover-transition hover:hover-transform">
+          <a
+            href="#trending"
+            className="hover-transition hover:hover-transform"
+          >
             Trending
           </a>
-          <a href="/" className="hover-transition hover:hover-transform">
-            Games of the year
+          <a
+            href="#categories"
+            className="hover-transition hover:hover-transform"
+          >
+            Categories
           </a>
-          <a href="/" className="hover-transition hover:hover-transform">
+          <a href="#support" className="hover-transition hover:hover-transform">
             Support
           </a>
         </div>

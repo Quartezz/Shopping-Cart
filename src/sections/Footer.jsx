@@ -4,7 +4,7 @@ import { footerLinks, socialMedia } from "../constans";
 
 const Footer = () => {
   return (
-    <footer className="bg-color-trust px-[15rem] w-full py-12">
+    <footer className="bg-color-trust px-[15rem] w-full py-12" id="support">
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col text-slate-100 barlow">
         <div className="flex flex-col items-start">
           <a href="/">
