@@ -34,7 +34,7 @@ const GenreList = ({ genereId, selectedGenresName }) => {
             <img
               src={item.image_background}
               alt={item.name}
-              className="w-full h-full object-fill rounded-lg sm:h-[150px] sm:w-[250px] h-[75px] w-[100px]"
+              className="w-full h-full object-fill rounded-lg sm:h-[150px] sm:w-[250px] h-[150px] w-[250px]"
             />
             <div className="text-center mt-2 w-[100px] text-start flex justify-center">
               <div
