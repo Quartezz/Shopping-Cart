@@ -13,11 +13,17 @@ const Trending = ({ gameList }) => {
         {gameList.map(
           (item, index) =>
             index < 6 && (
-              <div className="m-4 z-1 min-w-0 relative sm:flex sm:flex-col hover-transition hover:hover-transform cursor-pointer flex items-center gap-2">
+              <div className="m-4 z-1 min-w-0 relative sm:flex sm:flex-col flex items-center gap-2">
                 <img
                   src={item.background_image}
                   className="w-full h-full object-fill rounded-lg sm:h-[200px] sm:w-[400px]"
                 />
+                <a
+                  className="absolute bottom-8 right-0 p-2 hover-transition hover:hover-transform cursor-pointer"
+                  href="/"
+                >
+                  <i className="fa-solid fa-plus-circle text-slate-100 text-2xl"></i>
+                </a>
                 <div className="w-full flex justify-between">
                   <span>{item.name}</span>
                   <span className="flex gap-1 items-center">{item.cost} $</span>

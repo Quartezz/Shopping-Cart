@@ -11,14 +11,21 @@ const Games = ({ gameList, selectedGenresName }) => {
       </a>
       <div className="flex flex-wrap w-full relative m-4 justify-center items-center flex-1">
         {gameList.map((item) => (
-          <div className="m-4 z-1 min-w-0 relative sm:flex sm:flex-col hover-transition hover:hover-transform cursor-pointer flex items-center gap-2">
+          <div className="m-4 z-1 min-w-0 sm:flex sm:flex-col flex items-center gap-2 relative">
             <img
               src={item.background_image}
-              className="w-full h-full object-fill rounded-lg sm:h-[200px] sm:w-[400px]"
+              className="w-full h-full object-fill rounded-lg sm:h-[200px] sm:w-[400px] "
+              alt={`${item.name} game card`}
             />
+            <a
+              className="absolute bottom-8 right-0 p-2 hover-transition hover:hover-transform cursor-pointer"
+              href="/"
+            >
+              <i className="fa-solid fa-plus-circle text-slate-100 text-2xl"></i>
+            </a>
             <div className="w-full flex justify-between">
               <span>{item.name}</span>
-              <span className="flex gap-1 items-center">{item.cost} $</span>
+              <span className="flex items-center">{item.cost} $</span>
               <span className="flex gap-1 items-center">
                 <i className="fa-solid fa-star"></i>
                 {item.rating}
