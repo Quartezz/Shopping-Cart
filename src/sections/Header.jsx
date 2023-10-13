@@ -1,4 +1,5 @@
 import { logo } from "../assets/icons";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -64,9 +65,11 @@ const Header = () => {
         </div>
       </div>
       <div className="flex gap-4">
-        <a href="" className="hover-transition hover:hover-transform">
-          <i className="fa-solid fa-cart-shopping text-2xl"></i>
-        </a>
+        <Link to="/cart">
+          <a href="" className="hover-transition hover:hover-transform">
+            <i className="fa-solid fa-cart-shopping text-2xl"></i>
+          </a>
+        </Link>
         <a href="" className="hover-transition hover:hover-transform">
           <i className="fa-solid fa-user text-2xl"></i>
         </a>
