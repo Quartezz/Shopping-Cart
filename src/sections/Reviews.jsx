@@ -8,7 +8,7 @@ import React from "react";
 const Reviews = () => {
   return (
     <div className="flex px-10 bg-color-trust items-center justify-center bg-cover text-slate-100 py-14">
-      <div className="w-full flex justify-center max-w-[1200px] gap-8 sm:flex-row flex-col">
+      <div className="w-full flex justify-center max-w-[1200px] gap-8 md:flex-row flex-col">
         <div className="rounded-lg spacer-color p-4 flex flex-col justify-between relative items-start ">
           <div className="flex">
             <img src={avatar1} alt="Avatar" className="w-12 h-12 circle" />

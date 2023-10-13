@@ -4,7 +4,10 @@ import { footerLinks, socialMedia } from "../constans";
 
 const Footer = () => {
   return (
-    <footer className="bg-color-trust px-[15rem] w-full py-12" id="support">
+    <footer
+      className="px-[5rem] bg-color-trust sm:px-[15rem] w-full py-12 flex sm:flex-row flex-col items-center justify-center"
+      id="support"
+    >
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col text-slate-100 barlow">
         <div className="flex flex-col items-start">
           <a href="/">
@@ -41,19 +44,19 @@ const Footer = () => {
             </div>
           ))}
         </div>
-      </div>
-      <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center text-slate-100">
-        <div className="flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer">
-          <img
-            src={copyrightSign}
-            alt="copyright"
-            width={20}
-            height={20}
-            className="rounded-full m-0"
-          />
-          <p>Copyright. All rights reserved</p>
+        <div className="flex justify-center text-white-400   text-slate-100 gap-4 flex-col items-center">
+          <div className="flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer">
+            <img
+              src={copyrightSign}
+              alt="copyright"
+              width={20}
+              height={20}
+              className="rounded-full m-0"
+            />
+            <p>Copyright. All rights reserved</p>
+          </div>
+          <p className="cursor-pointer">Terms & Conditions</p>
         </div>
-        <p className="cursor-pointer">Terms & Conditions</p>
       </div>
     </footer>
   );

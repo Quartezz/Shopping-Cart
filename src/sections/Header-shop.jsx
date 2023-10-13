@@ -27,13 +27,13 @@ const Headershop = () => {
             Support
           </a>
         </div>
-        <div className="flex sm:gap-4 items-center justify-center relative w-full gap-1">
+        <div className="flex sm:gap-4 items-center justify-center relative w-full gap-2">
           <div>
             <a
               href="/"
               className="flex items-center gap-1 hover-transition hover:hover-transform"
             >
-              <i className="fa-solid fa-desktop text-xl"></i>
+              <i className="fa-solid fa-desktop text-xl hidden sm:flex"></i>
               <span>PC</span>
             </a>
           </div>
@@ -42,7 +42,7 @@ const Headershop = () => {
               href=""
               className="flex items-center gap-1 hover-transition hover:hover-transform"
             >
-              <i className="fa-brands fa-playstation text-xl"></i>
+              <i className="fa-brands fa-playstation text-xl hidden sm:flex"></i>
               <span>Playstation</span>
             </a>
           </div>
@@ -51,7 +51,7 @@ const Headershop = () => {
               href=""
               className="flex items-center gap-1 hover-transition hover:hover-transform"
             >
-              <i className="fa-brands fa-xbox text-xl"></i>
+              <i className="fa-brands fa-xbox text-xl hidden sm:flex"></i>
               <span>Xbox</span>
             </a>
           </div>
@@ -60,7 +60,7 @@ const Headershop = () => {
               href=""
               className="flex items-center gap-1 hover-transition hover:hover-transform"
             >
-              <i className="fa-solid fa-gamepad text-xl"></i>
+              <i className="fa-solid fa-gamepad text-xl hidden sm:flex"></i>
               <span>Nintendo</span>
             </a>
           </div>

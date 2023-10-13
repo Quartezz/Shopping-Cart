@@ -6,7 +6,7 @@ const Home = () => {
       className="flex flex-col items-center justify-center w-full relative"
     >
       <img src={home} alt="" className="object-cover w-full min-h-[300px] " />
-      <div className="flex sm:items-start justify-start z-9 text-slate-100 w-full absolute pl-40 flex-col items-center">
+      <div className="flex justify-start z-9 text-slate-100 w-full absolute pl-32 flex-col">
         <span className="font-bold text-4xl">Game Harbor</span>
         <p>Where the gaming begins</p>
       </div>
