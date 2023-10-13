@@ -29,14 +29,14 @@ const GenreList = ({ genereId, selectedGenresName }) => {
               genereId(item.id);
               selectedGenresName(item.name);
             }}
-            className="m-4 z-1 min-w-0 relative sm:flex sm:flex-col hover-transition hover:hover-transform cursor-pointer flex items-center gap-2"
+            className="m-4 z-1 min-w-0 relative flex flex-col hover-transition hover:hover-transform cursor-pointer flex items-center gap-2"
           >
             <img
               src={item.image_background}
               alt={item.name}
               className="w-full h-full object-fill rounded-lg sm:h-[150px] sm:w-[250px] h-[75px] w-[100px]"
             />
-            <div className="sm:text-center mt-2 w-[100px] text-start">
+            <div className="text-center mt-2 w-[100px] text-start flex justify-center">
               <div
                 className={`z-1 sm:text-2xl font-bold text-xl ${
                   activeIndex == index ? "text-amber-700" : null

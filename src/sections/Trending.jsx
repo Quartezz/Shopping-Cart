@@ -8,7 +8,7 @@ const Trending = ({ gameList, addToCart }) => {
       id="trending"
       className="flex flex-col px-40 text-slate-100 bg-color w-full h-full"
     >
-      <a href="/" className="flex items-end justify-start gap-2">
+      <a href="/" className="flex items-end justify-start gap-2 items-end">
         <h2 className="text-3xl">Trending</h2>
         <i className="fa-solid fa-chevron-right text-2xl"></i>
       </a>
