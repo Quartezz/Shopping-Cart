@@ -1,7 +1,13 @@
-import React from "react";
+import Headercart from "../sections/Header-cart";
+import Cartcontent from "../sections/Cartcontent";
 
 const Cart = () => {
-  return <div>Cart</div>;
+  return (
+    <div className="Cart">
+      <Headercart />
+      <Cartcontent />
+    </div>
+  );
 };
 
 export default Cart;

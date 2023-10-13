@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
+import { useCart } from "../components/CartContext";
 
-const Games = ({ gameList, selectedGenresName }) => {
+const Games = ({ gameList, selectedGenresName, addToCart }) => {
   useEffect(() => {}, []);
 
   return (
@@ -18,8 +19,8 @@ const Games = ({ gameList, selectedGenresName }) => {
               alt={`${item.name} game card`}
             />
             <a
+              onClick={() => addToCart(item)}
               className="absolute bottom-8 right-0 p-2 hover-transition hover:hover-transform cursor-pointer"
-              href="/"
             >
               <i className="fa-solid fa-plus-circle text-slate-100 text-2xl"></i>
             </a>

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const Trending = ({ gameList }) => {
+const Trending = ({ gameList, addToCart }) => {
   useEffect(() => {}, []);
 
   return (
@@ -22,8 +22,8 @@ const Trending = ({ gameList }) => {
                   className="w-full h-full object-fill rounded-lg sm:h-[200px] sm:w-[400px]"
                 />
                 <a
+                  onClick={() => addToCart(item)}
                   className="absolute bottom-8 right-0 p-2 hover-transition hover:hover-transform cursor-pointer"
-                  href="/"
                 >
                   <i className="fa-solid fa-plus-circle text-slate-100 text-2xl"></i>
                 </a>
