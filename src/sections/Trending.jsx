@@ -6,7 +6,7 @@ const Trending = ({ gameList, addToCart }) => {
   return (
     <div
       id="trending"
-      className="flex flex-col px-40 text-slate-100 bg-color w-full h-full"
+      className="sm:px-40 text-slate-100 bg-color w-full h-full px-10"
     >
       <a href="/" className="flex items-end justify-start gap-2 items-end">
         <h2 className="text-3xl">Trending</h2>
@@ -16,7 +16,7 @@ const Trending = ({ gameList, addToCart }) => {
         {gameList.map(
           (item, index) =>
             index < 6 && (
-              <div className="m-4 z-1 min-w-0 relative sm:flex sm:flex-col flex items-center gap-2">
+              <div className="m-4 z-1 min-w-0 flex-col flex items-center gap-2 relative">
                 <img
                   src={item.background_image}
                   className="w-full h-full object-fill rounded-lg sm:h-[200px] sm:w-[400px]"

@@ -12,7 +12,7 @@ const Games = ({ gameList, selectedGenresName, addToCart }) => {
       </a>
       <div className="flex flex-wrap w-full relative m-4 justify-center items-center flex-1">
         {gameList.map((item) => (
-          <div className="m-4 z-1 min-w-0 sm:flex sm:flex-col flex items-center gap-2 relative">
+          <div className="m-4 z-1 min-w-0 flex-col flex items-center gap-2 relative">
             <img
               src={item.background_image}
               className="w-full h-full object-fill rounded-lg sm:h-[200px] sm:w-[400px] "
