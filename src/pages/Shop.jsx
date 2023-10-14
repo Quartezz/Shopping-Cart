@@ -33,15 +33,19 @@ const Shop = () => {
   };
 
   const getAllGamesList = () => {
-    Api.getAllGames.then((resp) => {
-      setAllGameList(generateRandomCost(resp));
-    });
+    Api.getAllGames
+      .then((resp) => {
+        setAllGameList(generateRandomCost(resp));
+      })
+      .catch((error) => console.error(error));
   };
 
   const getGameListByGenresId = (id) => {
-    Api.getGameListByGenreId(id).then((resp) => {
-      setGameListByGenres(generateRandomCost(resp));
-    });
+    Api.getGameListByGenreId(id)
+      .then((resp) => {
+        setGameListByGenres(generateRandomCost(resp));
+      })
+      .catch((error) => console.error(error));
   };
 
   return (
