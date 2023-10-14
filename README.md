@@ -7,6 +7,22 @@
 A Shopping Cart App imitating real Game Store website. Game data comes from RAWG API.   
 [Live Demo](https://quartezz.github.io/Shopping-Cart/) 
 
+## :wrench: Technologies Used
+- HTML
+- Tailwind CSS
+- JavaScript
+- React
+- React Router
+- Axios
+- npm
+- webpack
+- eslint
+- babel  
+
+## :book: What I learned
+The most important thing I managed to learn is how to use fetch to collect data and use it thanks to the API. The other new thing I learned is how to set up React Router to navigate between pages faster.
+  
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
