@@ -57,7 +57,12 @@ const Footer = () => {
             <p>Copyright. All rights reserved</p>
           </div>
           <p className="cursor-pointer">Terms & Conditions</p>
-          <img src={rawg} alt="Api" />
+          <span className="flex gap-2 items-center">
+            <a href="https://rawg.io/apidocs">
+              <img src={rawg} alt="Api" width={30} height={30} />
+            </a>
+            API
+          </span>
         </div>
       </div>
     </footer>
