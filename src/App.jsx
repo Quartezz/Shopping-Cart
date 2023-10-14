@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <CartProvider>
-        <Router>
+        <Router basename="/Shopping-Cart">
           <Routes>
             <Route path="/" element={<Shop />}></Route>
             <Route path="/cart" element={<Cart />}></Route>
