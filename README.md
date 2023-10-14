@@ -1,3 +1,11 @@
+<p align="center">
+    <h1 align="center">Shopping Cart</h1>
+  </a>
+</p> 
+
+## :bell: About
+A Shopping Cart App imitating real Game Store website. The data for games 
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
