@@ -1,6 +1,7 @@
 import copyrightSign from "../assets/icons/copyright-sign.svg";
 import footerLogo from "../assets/icons/logo.png";
 import { footerLinks, socialMedia } from "../constans";
+import rawg from "../assets/icons/Rawg.png";
 
 const Footer = () => {
   return (
@@ -56,6 +57,7 @@ const Footer = () => {
             <p>Copyright. All rights reserved</p>
           </div>
           <p className="cursor-pointer">Terms & Conditions</p>
+          <img src={rawg} alt="Api" />
         </div>
       </div>
     </footer>
