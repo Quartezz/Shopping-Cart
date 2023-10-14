@@ -4,7 +4,8 @@
 </p> 
 
 ## :bell: About
-A Shopping Cart App imitating real Game Store website. The data for games 
+A Shopping Cart App imitating real Game Store website. Game data comes from RAWG API.   
+[Live Demo](https://quartezz.github.io/Shopping-Cart/) 
 
 # React + Vite
 
